@@ -1,15 +1,31 @@
 import React, { Component } from 'react';
 import {NavPic, NavText} from './components/Navigation';
-import up from './images/arrow-white.png';
-import styles from "./style/Navigation.module.css";
+import Content from './components/Content.js';
+import './images/bcknife.jpg';
+import './images/pg1.png';
+import './images/bu.jpg';
+import './images/paring.jpg';
+import './images/upchef.jpg';
+import './images/upu.jpg';
+import Footer from './sections/Footer';
+import Landing from './sections/Landing';
+import Section1 from './sections/Section1';
+import { Grid } from '@material-ui/core';
 
 class App extends Component {
   render() {
   return (
-    <>
-      <NavPic where='/' pic={up} style={styles.top} />
-      <NavText where='/' text='Press if you gay.' type='light' style={"btn-light test2 " + styles.navi}/>
-    </>
+    <Grid container direction ='column'>
+      <Grid item>
+        <Landing />
+      </Grid>
+      <Grid item>
+        <Section1 />
+      </Grid>
+      <Grid item>
+        <Footer className='align-bottom'/>
+      </Grid>
+    </Grid>
   );
 }
 }

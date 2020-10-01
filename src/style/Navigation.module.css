@@ -2,7 +2,6 @@
   width: 3rem;
   height: auto;
   transform: rotate(180deg);
-  margin: 1rem 0;
   transition: all 0.3s ease-in;
   cursor: pointer;
 }
@@ -10,3 +9,19 @@
 .top:hover {
   transform: translateY(-3px) rotate(180deg);
 }
+
+
+/* #blah {
+  background-image: url() ;
+  background: linear-gradient( rgba(0,0,0,0.533), rgba(68, 35, 35, 0.533)), url('../images/bcknife.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+#foot {
+  background-color: white;
+} */
